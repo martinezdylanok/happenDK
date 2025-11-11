@@ -1,0 +1,7 @@
+---
+description: Product description
+globs:
+alwaysApply: true
+---
+
+The end product should be a single source aggregator for all Copenhagen (and later, Denmark) events of all sorts combining multiple sources into a minimal and fast interface.
