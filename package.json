@@ -1,0 +1,13 @@
+{
+  "name": "happendk",
+  "private": false,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "All Copenhagen events in one place. No more tab-hopping",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "vite": "^7.1.11"
+  }
+}
