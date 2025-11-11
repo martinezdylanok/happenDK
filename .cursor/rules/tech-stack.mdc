@@ -1,0 +1,29 @@
+---
+description: Project Tech stack
+alwaysApply: true
+---
+The global tech stack used in this project is:
+- TypeScript
+- React
+- Python
+- PostgreSQL
+- Docker
+- Vite
+- Vitest
+- Tailwind
+- Docker
+- Context engineering
+- AWS core services
+- CI/CD pipelines
+- Terraform (Infrastructure as Code)
+- Kubernetes
+- RabbitMQ (Message broker)
+- REST / RESTful APIs
+- GraphQL / tRPC (API communication, non API REST or Fast API)
+- Redis (in-memory data store)
+- Prisma / Drizzle (ORMs)
+- rxJS / Redux (state management)
+- Grafana (monitoring & observability)
+- Storybook (UI component dev & documentation)
+- Playwright (end-to-end testing)
+- Webhooks
