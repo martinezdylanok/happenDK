@@ -1,0 +1,59 @@
+# DEPENDENCIES & PACKAGE MANAGERS
+node_modules
+yarn.lock
+pnpm-lock.yaml
+
+# LOGS & DEBUG FILES
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# BUILD OUTPUTS & DISTRIBUTION
+dist
+dist-ssr
+packages/*/dist/
+packages/*/build/
+
+# ENVIRONMENT & CONFIGURATION
+*.local
+.env
+.env.*
+.env.local
+.env.development
+.env.production
+.env.test
+
+# TESTING & COVERAGE
+coverage/
+.nyc_output/
+*.lcov
+
+# DATABASE FILES
+*.db
+*.sqlite
+*.sqlite3
+
+# EDITOR & IDE FILES
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.sublime-project
+*.sublime-workspace
+
+# OPERATING SYSTEM FILES
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# PERSONAL & PROJECT SPECIFIC
+FORLEARNING.md
