@@ -1,0 +1,12 @@
+{
+	"name": "happendk-server",
+	"private": true,
+	"version": "0.1.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"lint": "biome format --write",
+		"preview": "vite preview"
+	}
+}
