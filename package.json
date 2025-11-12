@@ -4,14 +4,14 @@
 	"version": "0.1.0",
 	"type": "module",
 	"workspaces": [
-		"packages/client",
-		"packages/server"
+		"apps/web",
+		"apps/api"
 	],
 	"scripts": {
-		"dev": "vite",
-		"build": "tsc -b && vite build",
-		"lint": "biome format --write",
-		"preview": "vite preview"
+		"dev": "npm run dev --workspace apps/web",
+		"build": "npm run build --workspace apps/web",
+		"lint": "npm run lint --workspace apps/web",
+		"preview": "npm run preview --workspace apps/web"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.3.5",
