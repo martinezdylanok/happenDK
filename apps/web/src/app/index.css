@@ -1,0 +1,145 @@
+@import "tailwindcss";
+@font-face {
+	font-family: "HankenGrotesk";
+	src: url("../assets/fonts/HankenGrotesk/HankenGrotesk-VariableFont_wght.ttf")
+		format("truetype");
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "HankenGrotesk";
+	src: url("../assets/fonts/HankenGrotesk/HankenGrotesk-Italic-VariableFont_wght.ttf")
+		format("truetype");
+	font-weight: 100 900;
+	font-style: italic;
+	font-display: swap;
+}
+
+@theme {
+	--font-hanken-grotesk: "HankenGrotesk", "sans-serif";
+	--font-sans: var(--font-hanken-grotesk);
+	--color-page: var(--bg-page);
+	--color-section: var(--bg-section);
+	--color-card: var(--bg-card);
+	--color-card-hover: var(--bg-card-hover);
+	--color-overlay: var(--bg-overlay);
+	--color-heading: var(--text-heading);
+	--color-body: var(--text-body);
+	--color-muted: var(--text-muted);
+	--color-accent: var(--text-accent);
+	--color-border-default: var(--border-default);
+	--color-border-subtle: var(--border-subtle);
+	--color-border-strong: var(--border-strong);
+	--color-focus: var(--color-focus);
+	--color-active: var(--color-active);
+	--color-disabled: var(--color-disabled);
+	--color-status-success: var(--color-status-success);
+	--color-status-error: var(--color-status-error);
+	--color-status-warning: var(--color-status-warning);
+}
+
+@layer base {
+	html {
+		scroll-behavior: smooth;
+		background-color: var(--bg-page);
+	}
+}
+
+/* PALETTE: CONCRETE (Blue/Orange) */
+:root[data-theme="light"] {
+	/* RAW COLORS */
+	--palette-primary: #ffffff; /* main page background */
+	--palette-secondary: #fafafa; /* cards / inner sections */
+	--palette-tertiary: #e0e0e0; /* borders, disabled */
+	--palette-text-primary: #111111; /* body text */
+	--palette-text-secondary: #333333; /* headings AAAAAAA */
+	--palette-text-tertiary: #a0a0a0; /* muted text */
+	--palette-accent: rgb(230, 50, 179); /* pink accent */
+	--palette-accent-active: rgb(230, 25, 179); /* darker pink active state */
+	--palette-hover: #f2f2f2; /* hover background */
+	--palette-overlay: #00000080; /* semi-transparent overlay */
+	--palette-status-success: #4caf50; /* green */
+	--palette-status-error: #f44336; /* red */
+	--palette-status-warning: #ffc107; /* yellow */
+
+	/* SEMANTIC TOKENS */
+	--bg-page: var(--palette-primary);
+	--bg-section: var(--palette-secondary);
+	--bg-card: var(--palette-secondary);
+	--bg-card-hover: var(--palette-hover);
+	--bg-overlay: var(--palette-overlay);
+
+	--text-heading: var(--palette-text-secondary);
+	--text-body: var(--palette-text-primary);
+	--text-muted: var(--palette-text-tertiary);
+	--text-accent: var(--palette-accent);
+
+	/* Borders */
+	--border-subtle: var(--palette-tertiary);
+	--border-default: color-mix(
+		in srgb,
+		var(--palette-tertiary),
+		var(--palette-text-primary) 20%
+	);
+	--border-strong: var(--palette-accent);
+
+	/* States */
+	--color-focus: var(--palette-link);
+	--color-active: var(--palette-accent-active);
+	--color-disabled: var(--palette-tertiary);
+
+	/* Status */
+	--color-status-success: var(--palette-status-success);
+	--color-status-error: var(--palette-status-error);
+	--color-status-warning: var(--palette-status-warning);
+}
+
+:root[data-theme="dark"] {
+	/* RAW COLORS */
+	--palette-primary: #252525; /* main page background */
+	--palette-secondary: #161616; /* cards / inner sections */
+	--palette-tertiary: #585858; /* borders, disabled */
+	--palette-text-primary: #ffffff; /* body text */
+	--palette-text-secondary: #e0e0e0; /* headings AAAAAA */
+	--palette-text-tertiary: #a0a0a0; /* muted text */
+	--palette-accent: #d36bf5; /* light purple accent */
+	--palette-accent-active: #d335f5; /* darker purple */
+	--palette-hover: #2a2a2a; /* hover background */
+	--palette-overlay: #000000bf; /* darker overlay */
+	--palette-status-success: #66bb6a; /* green */
+	--palette-status-error: #ef5350; /* red */
+	--palette-status-warning: #ffd54f; /* yellow */
+
+	/* SEMANTIC TOKENS */
+	--bg-page: var(--palette-primary);
+	--bg-section: var(--palette-secondary);
+	--bg-card: var(--palette-secondary);
+	--bg-card-hover: var(--palette-hover);
+	--bg-overlay: var(--palette-overlay);
+
+	--text-heading: var(--palette-text-secondary);
+	--text-body: var(--palette-text-primary);
+	--text-muted: var(--palette-text-tertiary);
+	--text-accent: var(--palette-accent);
+
+	/* Borders */
+	--border-subtle: var(--palette-tertiary);
+	--border-default: color-mix(
+		in srgb,
+		var(--palette-tertiary),
+		var(--palette-text-primary) 25%
+	);
+	--border-strong: var(--palette-accent);
+
+	/* States */
+	--color-focus: var(--palette-link);
+	--color-active: var(--palette-accent-active);
+	--color-disabled: var(--palette-tertiary);
+
+	/* Status */
+	--color-status-success: var(--palette-status-success);
+	--color-status-error: var(--palette-status-error);
+	--color-status-warning: var(--palette-status-warning);
+}
