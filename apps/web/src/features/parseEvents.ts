@@ -1,12 +1,14 @@
-const parseEvents = (data) => {
+import type { Event } from "./eventType";
+
+const parseEvents = (data: any): Event[] => {
 	const groups = data?.grouped?.its_product_pid?.groups;
 
 	if (!groups || !Array.isArray(groups)) {
 		console.log("No groups found in response");
-		return;
+		return [];
 	}
 
-	const allEvents = [];
+	const allEvents: Event[] = [];
 
 	groups.forEach((group) => {
 		const docs = group?.doclist?.docs;
@@ -15,7 +17,7 @@ const parseEvents = (data) => {
 			console.log("No docs found in response");
 		}
 
-		docs.forEach((doc, index) => {
+		docs.forEach((doc: any, index: number) => {
 			// Handle description - concatenate if it's an array
 			let description = "No description";
 			if (doc.tm_X3b_en_product_hoved) {
