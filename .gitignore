@@ -15,8 +15,10 @@ lerna-debug.log*
 # BUILD OUTPUTS & DISTRIBUTION
 dist
 dist-ssr
-packages/*/dist/
-packages/*/build/
+build
+apps/*/dist/
+apps/*/build/
+*.egg-info/
 
 # ENVIRONMENT & CONFIGURATION
 *.local
@@ -56,5 +58,11 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 
-# PERSONAL & PROJECT SPECIFIC
-FORLEARNING.md
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+env/
+venv/
+.venv/
