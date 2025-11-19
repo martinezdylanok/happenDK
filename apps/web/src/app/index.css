@@ -4,26 +4,17 @@
 @custom-variant dark (&:is(.dark *));
 
 @font-face {
-	font-family: "HankenGrotesk";
-	src: url("../assets/fonts/HankenGrotesk/HankenGrotesk-VariableFont_wght.ttf")
+	font-family: "Geist";
+	src: url("../assets/fonts/Geist/Geist-VariableFont_wght.ttf")
 		format("truetype");
 	font-weight: 100 900;
 	font-style: normal;
 	font-display: swap;
 }
 
-@font-face {
-	font-family: "HankenGrotesk";
-	src: url("../assets/fonts/HankenGrotesk/HankenGrotesk-Italic-VariableFont_wght.ttf")
-		format("truetype");
-	font-weight: 100 900;
-	font-style: italic;
-	font-display: swap;
-}
-
 @theme {
-	--font-hanken-grotesk: "HankenGrotesk", "sans-serif";
-	--font-sans: var(--font-hanken-grotesk);
+	--font-geist: "Geist", "sans-serif";
+	--font-sans: var(--font-geist);
 	--color-page: var(--bg-page);
 	--color-section: var(--bg-section);
 	--color-card: var(--bg-card);
