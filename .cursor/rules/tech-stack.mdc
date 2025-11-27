@@ -6,6 +6,7 @@ The global tech stack used in this project is:
 - TypeScript
 - React
 - Python
+- Flask
 - PostgreSQL
 - Docker
 - Vite
