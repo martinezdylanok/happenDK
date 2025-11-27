@@ -28,7 +28,6 @@ apps/*/build/
 .env.development
 .env.production
 .env.test
-.vscode
 
 # TESTING & COVERAGE
 coverage/
@@ -58,9 +57,18 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 
-# Python cache
+# Python cache & build artifacts
 __pycache__/
 *.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+
+# TypeScript
+*.tsbuildinfo
 
 # Virtual environments
 env/
