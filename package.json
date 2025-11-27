@@ -8,10 +8,12 @@
 		"apps/api"
 	],
 	"scripts": {
-		"dev": "npm run dev --workspace apps/web",
-		"build": "npm run build --workspace apps/web",
-		"lint": "npm run lint --workspace apps/web",
-		"preview": "npm run preview --workspace apps/web"
+		"web:dev": "npm run dev --workspace apps/web",
+		"web:build": "npm run build --workspace apps/web",
+		"web:lint": "npm run lint --workspace apps/web",
+		"api:dev": "cd apps/api && source env/bin/activate && FLASK_DEBUG=1 PYTHONPATH=. python3 src/app/app.py",
+		"api:start": "cd apps/api && source env/bin/activate && PYTHONPATH=. python3 src/app/app.py",
+		"api:lint": "cd apps/api && source env/bin/activate && black --check ."
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.3.5",
