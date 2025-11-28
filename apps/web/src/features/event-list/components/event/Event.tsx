@@ -1,5 +1,5 @@
-import EventCard from "./EventCard";
-import type { Event as EventType } from "./eventType";
+import type { Event as EventType } from "../../data/eventType";
+import EventCard from "./components/event-card/EventCard";
 
 interface EventProps {
 	event: EventType;
