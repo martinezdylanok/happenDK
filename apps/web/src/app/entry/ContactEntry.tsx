@@ -1,10 +1,15 @@
-// src/app/entry/homeEntry.tsx
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import "../index.css";
 import ContactPage from "../pages/ContactPage";
 
-const root = createRoot(document.getElementById("root")!);
-root.render(
+const rootElement = document.getElementById("root");
+
+if (!rootElement) {
+	throw new Error("Root element not found");
+}
+
+createRoot(rootElement).render(
 	<StrictMode>
 		<ContactPage />
 	</StrictMode>,
