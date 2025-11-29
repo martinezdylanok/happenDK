@@ -40,7 +40,7 @@
 	}
 }
 
-:root {
+:root[data-theme="light"] {
 	/* RAW COLORS */
 	--palette-primary: #ffffff; /* main page background */
 	--palette-secondary: #fafafa; /* cards / inner sections */
@@ -78,7 +78,7 @@
 	--border-strong: var(--palette-accent);
 
 	/* States */
-	--color-focus: var(--palette-link);
+	--color-focus: var(--palette-accent);
 	--color-active: var(--palette-accent-active);
 	--color-disabled: var(--palette-tertiary);
 
@@ -126,7 +126,7 @@
 	--border-strong: var(--palette-accent);
 
 	/* States */
-	--color-focus: var(--palette-link);
+	--color-focus: var(--palette-accent);
 	--color-active: var(--palette-accent-active);
 	--color-disabled: var(--palette-tertiary);
 
