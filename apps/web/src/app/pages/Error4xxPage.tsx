@@ -1,11 +1,12 @@
 import Layout from "@/components/Layout";
+import Error4xxHero from "@/features/errors/components/error-4xx-hero/Error4xxHero";
 
 const Error4xxPage = () => {
 	return (
 		<Layout>
-			<div className="error-5xx-page container mx-auto px-6 py-12">
-				<span>Erorr 404: Page not found</span>
-			</div>
+			<section className="error-4xx-page container mx-auto px-6 py-12">
+				<Error4xxHero />
+			</section>
 		</Layout>
 	);
 };
