@@ -1,12 +1,12 @@
 import Layout from "@/components/Layout";
-import EventList from "../../features/event-list/EventList";
+import SignupHero from "@/features/signup/components/signup-hero/SignupHero";
 
 const SignupPage = () => {
 	return (
 		<Layout>
-			<div className="signup-page container mx-auto px-6 py-12">
-				<EventList />
-			</div>
+			<section className="signup-page container mx-auto px-6 py-12">
+				<SignupHero />
+			</section>
 		</Layout>
 	);
 };

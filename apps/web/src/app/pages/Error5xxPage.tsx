@@ -1,11 +1,12 @@
 import Layout from "@/components/Layout";
+import Error5xxHero from "@/features/errors/components/error-5xx-hero/Error5xxHero";
 
 const Error5xxPage = () => {
 	return (
 		<Layout>
-			<div className="error-5xx-page container mx-auto px-6 py-12">
-				<span>Erorr 500: Internal server error</span>
-			</div>
+			<section className="error-5xx-page container mx-auto px-6 py-12">
+				<Error5xxHero />
+			</section>
 		</Layout>
 	);
 };
