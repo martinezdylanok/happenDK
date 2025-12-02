@@ -47,7 +47,7 @@ const Footer = () => {
 								About
 							</a>
 							<a
-								href="contact"
+								href="/contact"
 								className={`cursor-pointer text-left text-sm transition-colors ${
 									currentPath === "/contact"
 										? "font-semibold"

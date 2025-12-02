@@ -16,13 +16,15 @@ const Header = () => {
 				</div>
 				<div className="header__navigation flex items-center gap-2">
 					<Button
+						asChild
 						className="cursor-pointer"
-						variant={currentPath === "/log-in" ? "default" : "ghost"}
+						variant={currentPath === "/login" ? "default" : "ghost"}
 						size="sm"
 					>
 						<a href="/login">Log in</a>
 					</Button>
 					<Button
+						asChild
 						className="cursor-pointer"
 						variant={currentPath === "/contact" ? "default" : "ghost"}
 						size="sm"
@@ -30,8 +32,9 @@ const Header = () => {
 						<a href="/contact">Contact</a>
 					</Button>
 					<Button
+						asChild
 						className="cursor-pointer"
-						variant={currentPath === "/sign-up" ? "default" : "default"}
+						variant={currentPath === "/signup" ? "default" : "default"}
 						size="sm"
 					>
 						<a href="/signup">Sign up</a>
