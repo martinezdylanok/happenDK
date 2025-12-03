@@ -1,7 +1,7 @@
 const HomeHero = () => {
 	return (
-		<main className="home-hero">
-			<div className="home-hero__header flex flex-col items-center justify-center mb-12">
+		<div className="home-hero">
+			<div className="home-hero__wrapper flex flex-col items-center justify-center mb-12">
 				<h1 className="mb-4 text-4xl text-center font-bold text-heading">
 					Happening in Denmark
 				</h1>
@@ -10,7 +10,7 @@ const HomeHero = () => {
 					spot.
 				</p>
 			</div>
-		</main>
+		</div>
 	);
 };
 
