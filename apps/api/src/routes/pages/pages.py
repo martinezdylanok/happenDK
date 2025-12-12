@@ -1,5 +1,5 @@
 from flask import Blueprint
-from src.lib.serve_page.serve_page import serve_page, CLIENT_DIST_PATH
+from src.lib.serve_page.serve_page import serve_page
 from src.lib.serve_asset.serve_asset import serve_asset
 
 pages_bp = Blueprint("pages", __name__)
