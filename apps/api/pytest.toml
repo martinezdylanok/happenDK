@@ -1,0 +1,26 @@
+[tool.pytest.ini_options]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "--verbose",
+    "--cov=src",
+    "--cov-report=html",
+    "--cov-report=term-missing",
+]
+
+[tool.coverage.run]
+source = ["src"]
+omit = [
+    "*/__pycache__/*",
+    "*/venv/*",
+    "*/env/*",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+]
