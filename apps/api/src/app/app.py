@@ -4,8 +4,8 @@ import os
 from flask import Flask
 from flask_cors import CORS
 
-from src.routes.pages import pages_bp
-from src.routes.errors import errors_bp
+from src.routes.pages.pages import pages_bp
+from src.routes.errors.errors import errors_bp
 
 app = Flask(__name__)
 CORS(app)
